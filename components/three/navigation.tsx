@@ -11,15 +11,7 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet";
 import { ThemeToggle } from "../theme-toggle";
-
-const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#work", label: "Work" },
-  { href: "#process", label: "Process" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
-];
+import { navLinks } from "@/lib/data";
 
 export function Navigation() {
   const [activeSection, setActiveSection] = useState("");

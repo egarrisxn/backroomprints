@@ -32,8 +32,8 @@ export function Quote() {
         <div className="relative z-10 container mx-auto px-4">
           <Card className="mx-auto max-w-2xl border-accent/30 bg-accent/10 p-12 text-center">
             <div className="mb-6 flex justify-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent/20">
-                <CheckCircle2 className="h-8 w-8 text-accent" />
+              <div className="flex size-16 items-center justify-center rounded-full bg-accent/20">
+                <CheckCircle2 className="size-8 text-accent" />
               </div>
             </div>
             <h3 className="mb-4 text-2xl font-bold text-foreground">
@@ -47,7 +47,7 @@ export function Quote() {
                 href="mailto:prints@backroomokc.com"
                 className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-accent"
               >
-                <Mail className="h-5 w-5" />
+                <Mail className="size-5" />
                 <span>prints@backroomokc.com</span>
               </a>
               <a
@@ -56,7 +56,7 @@ export function Quote() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-accent"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="size-5" />
                 <span>@backroomprints</span>
               </a>
             </div>

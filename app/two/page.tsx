@@ -1,4 +1,4 @@
-// import { Announcement } from "@/components/two/announcement";
+import { Banner } from "@/components/two/banner";
 import { Navigation } from "@/components/two/navigation";
 import { Hero } from "@/components/two/hero";
 import { Services } from "@/components/two/services";
@@ -12,7 +12,7 @@ import { Footer } from "@/components/two/footer";
 export default function TwoPage() {
   return (
     <div>
-      {/* <Announcement /> */}
+      <Banner />
       <Navigation />
       <main>
         <Hero />

@@ -50,7 +50,7 @@ export function Process() {
                 <div className="flex flex-col items-center text-center">
                   <div className="relative mb-6">
                     <div className="absolute -inset-4 rounded-full bg-primary/20 blur-xl" />
-                    <div className="relative flex h-20 w-20 items-center justify-center rounded-full border-2 border-primary/50 bg-linear-to-br from-primary/20 to-primary/10">
+                    <div className="relative flex size-20 items-center justify-center rounded-full border-2 border-primary/50 bg-linear-to-br from-primary/20 to-primary/10">
                       <Icon className="size-8 text-primary" />
                     </div>
                   </div>

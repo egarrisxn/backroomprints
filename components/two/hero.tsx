@@ -20,15 +20,14 @@ export function Hero() {
       id="hero"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
-      {/*  texture overlay */}
-      <div className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')] opacity-[0.015]" />
-
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="mx-auto max-w-4xl space-y-8 text-center">
           <h1 className="text-5xl leading-[0.95] font-black tracking-tighter text-balance md:text-7xl lg:text-8xl">
             Merch that hits.
             <br />
-            <span className="text-accent">Prints that last.</span>
+            <span className="text-accent dark:text-primary/70">
+              Prints that last.
+            </span>
           </h1>
 
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-pretty text-muted-foreground md:text-xl">
@@ -59,21 +58,21 @@ export function Hero() {
               variant="secondary"
               className="flex items-center gap-2 px-4 py-2 text-sm font-medium"
             >
-              <Shirt className="h-4 w-4" />
+              <Shirt className="size-4" />
               Band / tour merch
             </Badge>
             <Badge
               variant="secondary"
               className="flex items-center gap-2 px-4 py-2 text-sm font-medium"
             >
-              <Zap className="h-4 w-4" />
+              <Zap className="size-4" />
               Small & bulk runs
             </Badge>
             <Badge
               variant="secondary"
               className="flex items-center gap-2 px-4 py-2 text-sm font-medium"
             >
-              <MessageCircle className="h-4 w-4" />
+              <MessageCircle className="size-4" />
               Fast communication
             </Badge>
           </div>

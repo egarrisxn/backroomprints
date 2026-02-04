@@ -31,7 +31,7 @@ export function Footer() {
                   href="mailto:prints@backroomokc.com"
                   className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-accent"
                 >
-                  <Mail className="h-4 w-4" />
+                  <Mail className="size-4" />
                   prints@backroomokc.com
                 </a>
                 <a
@@ -40,7 +40,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-accent"
                 >
-                  <Instagram className="h-4 w-4" />
+                  <Instagram className="size-4" />
                   @backroomprints
                 </a>
               </div>

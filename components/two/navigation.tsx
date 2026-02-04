@@ -4,15 +4,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "../theme-toggle";
-
-const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
-];
+import { navLinks } from "@/lib/data";
 
 export function Navigation() {
   const [activeSection, setActiveSection] = useState("");
@@ -23,7 +15,7 @@ export function Navigation() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = navItems.map((item) => item.href.slice(1));
+      const sections = navLinks.map((item) => item.href.slice(1));
       const current = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -57,9 +49,9 @@ export function Navigation() {
   return (
     <>
       <nav
-        className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+        className={`sticky top-0 right-0 left-0 z-50 w-full transition-all duration-300 ${
           scrolled
-            ? "border-b border-border bg-background/95 backdrop-blur-md"
+            ? "border-b border-black/10 bg-background/80 backdrop-blur-md dark:border-primary-foreground/50"
             : "bg-transparent"
         }`}
       >
@@ -74,7 +66,7 @@ export function Navigation() {
 
             {/* Desktop Navigation */}
             <div className="hidden items-center gap-1 md:flex">
-              {navItems.map((item) => (
+              {navLinks.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
@@ -113,7 +105,7 @@ export function Navigation() {
         {mobileMenuOpen && (
           <div className="border-t border-border bg-card md:hidden">
             <div className="container mx-auto space-y-2 px-4 py-4">
-              {navItems.map((item) => (
+              {navLinks.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}

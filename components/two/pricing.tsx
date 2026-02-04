@@ -47,7 +47,7 @@ export function Pricing() {
             <Card className="border-accent/30 bg-accent/10 p-8">
               <div className="flex items-start gap-4">
                 <div className="rounded-md bg-accent/20 p-3">
-                  <Lightbulb className="h-6 w-6 text-accent" />
+                  <Lightbulb className="size-6 text-accent" />
                 </div>
                 <div>
                   <h3 className="mb-2 text-lg font-bold text-foreground">

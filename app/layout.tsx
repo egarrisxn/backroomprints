@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
 // import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
-// import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -61,6 +61,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
+  maximumScale: 1,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#090909" },
     { media: "(prefers-color-scheme: dark)", color: "#090909" },
@@ -73,12 +74,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <meta name="apple-mobile-web-app-title" content="Backroom Prints" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} min-h-svh max-w-[100vw] font-sans antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} font-sans antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} min-h-svh max-w-[100vw] font-sans antialiased`}
       >
         <ThemeProvider
           enableSystem
@@ -87,7 +89,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>{children}</TooltipProvider>
-          {/* <Toaster /> */}
+          <Toaster />
         </ThemeProvider>
         {/* <Analytics /> */}
       </body>

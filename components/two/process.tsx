@@ -48,10 +48,10 @@ export function Process() {
               <div key={index} className="relative">
                 <div className="flex flex-col items-center space-y-4 text-center">
                   <div className="relative">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent/30 bg-accent/10">
-                      <step.icon className="h-8 w-8 text-accent" />
+                    <div className="flex size-16 items-center justify-center rounded-full border-2 border-accent/30 bg-accent/10">
+                      <step.icon className="size-8 text-accent" />
                     </div>
-                    <div className="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-black text-accent-foreground">
+                    <div className="absolute -top-2 -right-2 flex size-8 items-center justify-center rounded-full bg-accent text-sm font-black text-accent-foreground">
                       {step.number}
                     </div>
                   </div>

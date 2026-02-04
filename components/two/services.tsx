@@ -53,7 +53,7 @@ export function Services() {
               >
                 <div className="flex items-start gap-4">
                   <div className="rounded-md bg-accent/10 p-3 transition-colors group-hover:bg-accent/20">
-                    <service.icon className="h-6 w-6 text-accent" />
+                    <service.icon className="size-6 text-accent" />
                   </div>
                   <div className="flex-1">
                     <h3 className="mb-2 text-lg font-bold text-foreground">

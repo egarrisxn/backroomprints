@@ -51,7 +51,7 @@ export function Quote() {
       <div className="mx-auto max-w-2xl rounded-lg border border-primary/50 bg-white/5 p-8 text-center backdrop-blur-sm md:p-12">
         <div className="mb-6 flex justify-center">
           <div className="rounded-full bg-primary/20 p-4">
-            <CheckCircle2 className="h-12 w-12 text-primary" />
+            <CheckCircle2 className="size-12 text-primary" />
           </div>
         </div>
 
@@ -68,7 +68,7 @@ export function Quote() {
             href="mailto:prints@backroomokc.com"
             className="flex items-center gap-2 transition-colors hover:text-primary"
           >
-            <Mail className="h-5 w-5" />
+            <Mail className="size-5" />
             <span>prints@backroomokc.com</span>
           </a>
           <span className="hidden text-gray-600 sm:block">|</span>
@@ -78,7 +78,7 @@ export function Quote() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 transition-colors hover:text-primary"
           >
-            <Instagram className="h-5 w-5" />
+            <Instagram className="size-5" />
             <span>@backroomprints</span>
           </a>
         </div>
