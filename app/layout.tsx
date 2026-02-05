@@ -63,8 +63,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   maximumScale: 1,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#090909" },
-    { media: "(prefers-color-scheme: dark)", color: "#090909" },
+    { media: "(prefers-color-scheme: light)", color: "#faf7f5" },
+    { media: "(prefers-color-scheme: dark)", color: "#1c1917" },
   ],
 };
 
@@ -79,8 +79,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Backroom Prints" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} font-sans antialiased`}
-        // className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} min-h-svh max-w-[100vw] font-sans antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} min-h-svh max-w-[100vw] overflow-x-hidden overscroll-contain font-sans antialiased`}
       >
         <ThemeProvider
           enableSystem
@@ -89,7 +88,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>{children}</TooltipProvider>
-          <Toaster />
+          <Toaster richColors position="bottom-center" />
         </ThemeProvider>
         {/* <Analytics /> */}
       </body>

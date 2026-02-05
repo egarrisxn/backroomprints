@@ -16,8 +16,11 @@ export default function HomePage() {
             Three different visual directions for the same single-page print
             shop site. Each prototype lives at{" "}
             <span className="font-mono">/one</span>,{" "}
-            <span className="font-mono">/two</span>, and{" "}
-            <span className="font-mono">/three</span>.
+            <span className="font-mono">/two</span>,{" "}
+            <span className="font-mono">/three</span>,{" "}
+            <span className="font-mono">/four</span>,{" "}
+            <span className="font-mono">/five</span>, <span>and</span>{" "}
+            <span className="font-mono">/six</span>,.
           </p>
         </header>
 
@@ -62,12 +65,6 @@ export default function HomePage() {
             </Link>
           ))}
         </section>
-
-        <footer className="mt-12 border-t border-border pt-6 text-sm text-muted-foreground">
-          Tip: add <span className="font-mono">?bg=1</span> style toggles inside{" "}
-          <span className="font-mono">/two</span> if you want quick logo swaps
-          during the demo.
-        </footer>
       </div>
     </main>
   );

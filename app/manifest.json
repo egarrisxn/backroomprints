@@ -3,8 +3,8 @@
   "short_name": "Backroom",
   "description": "Premium printing services for artists and creatives",
   "lang": "en",
-  "theme_color": "#090909",
-  "background_color": "#090909",
+  "theme_color": "#1c1917",
+  "background_color": "#1c1917",
   "display": "standalone",
   "icons": [
     {

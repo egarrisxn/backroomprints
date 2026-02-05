@@ -1,4 +1,9 @@
-export const navLinks = [
+import { InstagramIcon } from "@/components/six/icons/instagram";
+import { TwitterIcon } from "@/components/six/icons/twitter";
+import { EmailIcon } from "@/components/six/icons/email";
+import type { HyperLink } from "./types";
+
+export const navLinks: HyperLink[] = [
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
   { label: "Process", href: "#process" },
@@ -11,26 +16,23 @@ export const prototypes = [
   {
     href: "/one",
     title: "Prototype 1",
-    subtitle: "Dark / gritty merch vibe",
-    description:
-      "Hardcore / band merch energy. High contrast, texture, bold CTAs, quote-first layout.",
-    badge: "Grit",
+    subtitle: "TBD",
+    description: "TBD",
+    badge: "TBD",
   },
   {
     href: "/two",
     title: "Prototype 2",
-    subtitle: "Modern / premium hero background",
-    description:
-      "Glass + gradients. Hero uses a swappable background image/logo variant. Clean sections + packages.",
-    badge: "Modern",
+    subtitle: "TBD",
+    description: "TBD",
+    badge: "TBD",
   },
   {
     href: "/three",
     title: "Prototype 3",
-    subtitle: "Ultra-minimal / light studio",
-    description:
-      "White space, editorial type, minimal accents. Premium studio feel with subtle logo watermark.",
-    badge: "Minimal",
+    subtitle: "TBD",
+    description: "TBD",
+    badge: "TBD",
   },
   {
     href: "/four",
@@ -46,4 +48,44 @@ export const prototypes = [
     description: "TBD",
     badge: "TBD",
   },
+  {
+    href: "/six",
+    title: "Prototype 6",
+    subtitle: "TBD",
+    description: "TBD",
+    badge: "TBD",
+  },
 ];
+
+export const socialData = [
+  {
+    id: "instagram",
+    title: "Instagram",
+    username: "BackroomPrints",
+    href: "https://www.instagram.com/backroomprints",
+    Icon: InstagramIcon,
+  },
+  {
+    id: "x",
+    title: "X",
+    username: "BackroomPrints",
+    href: "https://x.com/BackroomPrints",
+    Icon: TwitterIcon,
+  },
+  {
+    id: "email",
+    title: "Email",
+    username: "BackroomPrints",
+    href: "mailto:BackroomPrintsOKC@gmail.com",
+    Icon: EmailIcon,
+  },
+];
+
+// export const navLinks: HyperLink[] = [
+//   { href: "#", label: "About Us" },
+//   { href: "#", label: "Services" },
+//   { href: "#", label: "Get a Quote" },
+//   { href: "#", label: "Our Work" },
+//   { href: "#", label: "FAQ'S" },
+//   { href: "#", label: "Contact" },
+// ];
