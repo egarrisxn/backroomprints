@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import type { GalleryItem } from "@/lib/four/types";
+import type { GalleryItem } from "@/lib/types/four";
 
 type Filter = "all" | "bands" | "brands" | "events" | "accessories";
 

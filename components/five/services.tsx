@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { SERVICE_ITEMS } from "@/lib/five/data";
+import { SERVICE_ITEMS } from "@/lib/data/five";
 
 export function Services() {
   return (

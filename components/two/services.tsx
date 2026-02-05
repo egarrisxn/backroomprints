@@ -1,33 +1,5 @@
-import { Shirt, Music, Building2, Calendar, Package } from "lucide-react";
 import { Card } from "@/components/ui/card";
-
-const services = [
-  {
-    icon: Shirt,
-    title: "Screen Printing",
-    description: "Tees, hoodies, long sleeves. Clean prints on quality blanks.",
-  },
-  {
-    icon: Music,
-    title: "Band / Tour Merch",
-    description: "Drops, tours, releases. We get the deadlines.",
-  },
-  {
-    icon: Building2,
-    title: "Business / Brand Apparel",
-    description: "Team gear, branded apparel. Small or bulk.",
-  },
-  {
-    icon: Calendar,
-    title: "Event Merch + Collabs",
-    description: "One-off events, limited runs, special projects.",
-  },
-  {
-    icon: Package,
-    title: "Extras Available",
-    description: "Stickers, buttons, small run accessories.",
-  },
-];
+import { TWO_SERVICES } from "@/lib/data/two";
 
 export function Services() {
   return (
@@ -46,7 +18,7 @@ export function Services() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, index) => (
+            {TWO_SERVICES.map((service, index) => (
               <Card
                 key={index}
                 className="group border-border bg-card p-6 transition-all duration-300 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10"

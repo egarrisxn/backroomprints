@@ -1,5 +1,5 @@
 import * as motion from "motion/react-client";
-import { processSteps } from "@/lib/four/data";
+import { processSteps } from "@/lib/data/four";
 
 export function ProcessTimeline() {
   return (

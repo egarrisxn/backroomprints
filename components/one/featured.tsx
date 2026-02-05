@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { ONE_FEATURED_PROJECTS } from "@/lib/data/one";
 
 export default function Featured() {
   return (
@@ -16,32 +17,7 @@ export default function Featured() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {[
-            {
-              title: "Band Merch Collection",
-              category: "Custom Apparel",
-              description:
-                "Complete merchandise line for local band including t-shirts, hoodies, and limited edition prints.",
-            },
-            {
-              title: "Album Release Campaign",
-              category: "Promotional Materials",
-              description:
-                "Posters, flyers, and promotional materials for a successful album launch event.",
-            },
-            {
-              title: "Artist Collaboration",
-              category: "Art Prints",
-              description:
-                "Limited edition art prints series featuring work from OKC-based visual artists.",
-            },
-            {
-              title: "Festival Merchandise",
-              category: "Event Merch",
-              description:
-                "Full merchandise suite for multi-day music festival including apparel and accessories.",
-            },
-          ].map((project, index) => (
+          {ONE_FEATURED_PROJECTS.map((project, index) => (
             <Card key={index} className="group overflow-hidden">
               <div className="relative aspect-4/3 overflow-hidden bg-secondary/50">
                 <div className="absolute inset-0 flex items-center justify-center bg-accent/10 transition-colors group-hover:bg-accent/20">

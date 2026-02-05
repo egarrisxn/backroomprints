@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { QUOTE_CHECKLIST } from "@/lib/five/data";
+import { QUOTE_CHECKLIST } from "@/lib/data/five";
 
 export function Hero({
   logoAccentSrc,

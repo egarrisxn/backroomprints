@@ -3,81 +3,17 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { TWO_GALLERY_FILTERS, TWO_GALLERY_PROJECTS } from "@/lib/data/two";
 
-type ProjectType = "all" | "bands" | "brands" | "events" | "drops";
-
-const projects = [
-  {
-    name: "OKHC Drop",
-    inkColors: "3-color",
-    garment: "Tee",
-    type: "drops" as const,
-  },
-  {
-    name: "Tour Tee 2024",
-    inkColors: "2-color",
-    garment: "Tee",
-    type: "bands" as const,
-  },
-  {
-    name: "Label Release",
-    inkColors: "4-color",
-    garment: "Hoodie",
-    type: "bands" as const,
-  },
-  {
-    name: "Brand Capsule",
-    inkColors: "White + red",
-    garment: "Long sleeve",
-    type: "brands" as const,
-  },
-  {
-    name: "Festival Collab",
-    inkColors: "2-color",
-    garment: "Tee",
-    type: "events" as const,
-  },
-  {
-    name: "Hardcore Night",
-    inkColors: "White ink",
-    garment: "Hoodie",
-    type: "events" as const,
-  },
-  {
-    name: "Street Drop",
-    inkColors: "3-color",
-    garment: "Tee",
-    type: "drops" as const,
-  },
-  {
-    name: "Local Band Merch",
-    inkColors: "2-color",
-    garment: "Tee",
-    type: "bands" as const,
-  },
-  {
-    name: "Brand Launch",
-    inkColors: "Black + gold",
-    garment: "Hoodie",
-    type: "brands" as const,
-  },
-];
-
-const filters = [
-  { label: "All", value: "all" as const },
-  { label: "Bands", value: "bands" as const },
-  { label: "Brands", value: "brands" as const },
-  { label: "Events", value: "events" as const },
-  { label: "Drops", value: "drops" as const },
-];
+type ProjectType = (typeof TWO_GALLERY_FILTERS)[number]["value"];
 
 export function Gallery() {
   const [activeFilter, setActiveFilter] = useState<ProjectType>("all");
 
   const filteredProjects =
     activeFilter === "all"
-      ? projects
-      : projects.filter((p) => p.type === activeFilter);
+      ? TWO_GALLERY_PROJECTS
+      : TWO_GALLERY_PROJECTS.filter((p) => p.type === activeFilter);
 
   return (
     <section id="work" className="relative bg-muted/30 py-20 md:py-32">
@@ -95,7 +31,7 @@ export function Gallery() {
           </div>
 
           <div className="mb-12 flex flex-wrap justify-center gap-2">
-            {filters.map((filter) => (
+            {TWO_GALLERY_FILTERS.map((filter) => (
               <button
                 key={filter.value}
                 onClick={() => setActiveFilter(filter.value)}

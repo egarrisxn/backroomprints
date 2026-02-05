@@ -1,44 +1,4 @@
-import {
-  Shirt,
-  Music,
-  Briefcase,
-  Calendar,
-  Sticker,
-  Circle,
-} from "lucide-react";
-
-const services = [
-  {
-    icon: Shirt,
-    title: "Screen Printing",
-    description: "Tees, hoodies, long sleeves. All garments.",
-  },
-  {
-    icon: Music,
-    title: "Band / Tour Merch",
-    description: "Built for the road. Durable ink. Fast turnaround.",
-  },
-  {
-    icon: Briefcase,
-    title: "Business / Brand Apparel",
-    description: "Professional quality. Your brand, done right.",
-  },
-  {
-    icon: Calendar,
-    title: "Event Merch + Collabs",
-    description: "Limited drops. Festival gear. Special releases.",
-  },
-  {
-    icon: Sticker,
-    title: "Stickers",
-    description: "Die-cut stickers. Small runs available.",
-  },
-  {
-    icon: Circle,
-    title: "Buttons",
-    description: "1-inch buttons. Perfect add-ons for any run.",
-  },
-];
+import { THREE_SERVICES } from "@/lib/data/three";
 
 export function Services() {
   return (
@@ -59,7 +19,7 @@ export function Services() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => {
+          {THREE_SERVICES.map((service, index) => {
             const Icon = service.icon;
             return (
               <div

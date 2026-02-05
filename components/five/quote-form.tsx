@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { PRODUCT_TYPES, PRINT_LOCATIONS } from "@/lib/five/data";
+import { PRODUCT_TYPES, PRINT_LOCATIONS } from "@/lib/data/five";
 
 export function QuoteForm({ onSubmit }: { onSubmit: () => void }) {
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {

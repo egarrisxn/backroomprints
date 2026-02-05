@@ -1,31 +1,4 @@
-import { FileImage, CheckCircle2, Printer, Truck } from "lucide-react";
-
-const steps = [
-  {
-    number: "1",
-    icon: FileImage,
-    title: "Send Details",
-    description: "Art, garment type, quantity, and any deadlines.",
-  },
-  {
-    number: "2",
-    icon: CheckCircle2,
-    title: "Approve Mockup",
-    description: "Review the proof and get your quote.",
-  },
-  {
-    number: "3",
-    icon: Printer,
-    title: "Print + QC",
-    description: "We print and quality-check every piece.",
-  },
-  {
-    number: "4",
-    icon: Truck,
-    title: "Pickup/Ship",
-    description: "Local pickup in OKC or nationwide shipping.",
-  },
-];
+import { TWO_PROCESS_STEPS } from "@/lib/data/two";
 
 export function Process() {
   return (
@@ -44,7 +17,7 @@ export function Process() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {steps.map((step, index) => (
+            {TWO_PROCESS_STEPS.map((step, index) => (
               <div key={index} className="relative">
                 <div className="flex flex-col items-center space-y-4 text-center">
                   <div className="relative">
@@ -65,7 +38,7 @@ export function Process() {
                   </div>
                 </div>
 
-                {index < steps.length - 1 && (
+                {index < TWO_PROCESS_STEPS.length - 1 && (
                   <div className="absolute top-8 left-[calc(50%+2rem)] hidden h-0.5 w-[calc(100%-4rem)] bg-border lg:block" />
                 )}
               </div>

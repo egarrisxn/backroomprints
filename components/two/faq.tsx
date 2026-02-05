@@ -4,34 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const faqs = [
-  {
-    question: "What's your minimum order?",
-    answer:
-      "Minimums vary based on print complexity and garment type. Typically we can work with runs as small as 12-24 pieces. Contact us with your project details for specific minimums.",
-  },
-  {
-    question: "What's the turnaround time?",
-    answer:
-      "Standard turnaround is 10-14 business days from approved artwork. Rush options available depending on our schedule and print complexity. Tour deadlines? Let us know upfront.",
-  },
-  {
-    question: "Can you help clean up artwork?",
-    answer:
-      "Yes. We can make basic adjustments, convert artwork to print-ready files, and suggest improvements. Complex design work may require additional fees, but we'll always let you know upfront.",
-  },
-  {
-    question: "What garments do you recommend?",
-    answer:
-      "We work with quality blanks from brands like Gildan Heavy Cotton, Comfort Colors, Independent Trading Co., and premium options. We'll recommend the best fit for your budget and aesthetic.",
-  },
-  {
-    question: "Local pickup vs shipping?",
-    answer:
-      "Based in Oklahoma City - local pickup is free. We also ship nationwide. Shipping costs depend on quantity and destination. We'll include shipping estimates in your quote.",
-  },
-];
+import { TWO_FAQS } from "@/lib/data/two";
 
 export function FAQ() {
   return (
@@ -50,7 +23,7 @@ export function FAQ() {
           </div>
 
           <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
+            {TWO_FAQS.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}

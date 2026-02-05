@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { packages } from "@/lib/four/data";
+import { packages } from "@/lib/data/four";
 
 export function Packages({ onCta }: { onCta: (id: string) => void }) {
   return (

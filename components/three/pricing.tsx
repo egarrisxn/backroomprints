@@ -1,11 +1,5 @@
 import { Check } from "lucide-react";
-
-const pricingPoints = [
-  "Minimums depend on print complexity & garment type",
-  "Bulk discounts available for larger runs",
-  "Rush options when timeline allows",
-  "Transparent pricing - no surprise fees",
-];
+import { THREE_PRICING_POINTS } from "@/lib/data/three";
 
 export function Pricing() {
   return (
@@ -23,7 +17,7 @@ export function Pricing() {
         <div className="mx-auto max-w-3xl">
           <div className="rounded-lg border border-foreground/5 bg-primary-foreground/95 p-8 backdrop-blur-sm md:p-12">
             <div className="space-y-6">
-              {pricingPoints.map((point, index) => (
+              {THREE_PRICING_POINTS.map((point, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="mt-1 rounded-full bg-primary p-1">
                     <Check className="size-4.5 text-primary-foreground" />

@@ -4,8 +4,8 @@ import { motion } from "motion/react";
 import { ArrowRight, Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import type { HeroBgVariant } from "@/lib/four/types";
-import { HERO_BG_VARIANTS, HERO_ITEMS } from "@/lib/four/data";
+import type { HeroBgVariant } from "@/lib/types/four";
+import { HERO_BG_VARIANTS, HERO_ITEMS } from "@/lib/data/four";
 
 type HeroProps = {
   heroBgVariant: HeroBgVariant;

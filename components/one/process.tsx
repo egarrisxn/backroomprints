@@ -1,3 +1,5 @@
+import { ONE_PROCESS_STEPS } from "@/lib/data/one";
+
 export default function Process() {
   return (
     <section id="process" className="bg-muted/30 py-12 md:py-20">
@@ -14,26 +16,7 @@ export default function Process() {
         </div>
 
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
-          {[
-            {
-              number: "1",
-              title: "Consultation",
-              description:
-                "Share your vision with us. We'll discuss your project, timeline, and budget to ensure we're aligned.",
-            },
-            {
-              number: "2",
-              title: "Design & Proof",
-              description:
-                "We'll prepare mockups and samples for your approval. Revisions included to get it perfect.",
-            },
-            {
-              number: "3",
-              title: "Production",
-              description:
-                "Your project goes into production with quality checks at every step. Fast turnaround guaranteed.",
-            },
-          ].map((step, index) => (
+          {ONE_PROCESS_STEPS.map((step, index) => (
             <div key={index} className="text-center">
               <div className="mb-4 inline-flex size-16 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground">
                 {step.number}

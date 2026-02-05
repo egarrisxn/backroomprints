@@ -1,7 +1,7 @@
 import { InstagramIcon } from "@/components/six/icons/instagram";
 import { TwitterIcon } from "@/components/six/icons/twitter";
 import { EmailIcon } from "@/components/six/icons/email";
-import type { HyperLink } from "./types";
+import type { HyperLink } from "@/lib/types";
 
 export const navLinks: HyperLink[] = [
   { label: "Services", href: "#services" },
@@ -80,12 +80,3 @@ export const socialData = [
     Icon: EmailIcon,
   },
 ];
-
-// export const navLinks: HyperLink[] = [
-//   { href: "#", label: "About Us" },
-//   { href: "#", label: "Services" },
-//   { href: "#", label: "Get a Quote" },
-//   { href: "#", label: "Our Work" },
-//   { href: "#", label: "FAQ'S" },
-//   { href: "#", label: "Contact" },
-// ];

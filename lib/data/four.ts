@@ -12,7 +12,7 @@ import type {
   Package,
   ProcessStep,
   FaqItem,
-} from "./types";
+} from "@/lib/types/four";
 
 export const NAV_ITEMS: NavItem[] = [
   { id: "services", label: "Services" },

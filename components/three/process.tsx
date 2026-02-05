@@ -1,31 +1,4 @@
-import { Send, FileCheck, Printer, PackageCheck } from "lucide-react";
-
-const steps = [
-  {
-    number: "01",
-    icon: Send,
-    title: "Send Details",
-    description: "Share your art, garment choice, and quantity.",
-  },
-  {
-    number: "02",
-    icon: FileCheck,
-    title: "Mockup + Quote",
-    description: "Review proof and pricing. Approve to proceed.",
-  },
-  {
-    number: "03",
-    icon: Printer,
-    title: "Print + QC",
-    description: "Print and quality-check every piece, every time.",
-  },
-  {
-    number: "04",
-    icon: PackageCheck,
-    title: "Pickup / Shipping",
-    description: "Local pickup in OKC or shipping nationwide.",
-  },
-];
+import { THREE_PROCESS_STEPS } from "@/lib/data/three";
 
 export function Process() {
   return (
@@ -43,7 +16,7 @@ export function Process() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {steps.map((step, index) => {
+          {THREE_PROCESS_STEPS.map((step, index) => {
             const Icon = step.icon;
             return (
               <div key={index} className="relative">
@@ -68,7 +41,7 @@ export function Process() {
                   </p>
                 </div>
 
-                {index < steps.length - 1 && (
+                {index < THREE_PROCESS_STEPS.length - 1 && (
                   <div className="absolute top-10 left-[60%] hidden h-0.5 w-[80%] bg-linear-to-r from-primary/50 to-transparent lg:block" />
                 )}
               </div>

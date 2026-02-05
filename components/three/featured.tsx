@@ -2,82 +2,18 @@
 
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
-
-const projects = [
-  {
-    name: "OKHC Drop",
-    category: "Drops",
-    inkColors: "3-color",
-    garment: "Tee",
-    gradient: "from-red-500/20 to-orange-500/20",
-  },
-  {
-    name: "Tour Tee 2024",
-    category: "Bands",
-    inkColors: "2-color",
-    garment: "Tee",
-    gradient: "from-blue-500/20 to-purple-500/20",
-  },
-  {
-    name: "Label Release",
-    category: "Bands",
-    inkColors: "4-color",
-    garment: "Hoodie",
-    gradient: "from-green-500/20 to-teal-500/20",
-  },
-  {
-    name: "Festival Kit",
-    category: "Events",
-    inkColors: "White + Red",
-    garment: "Tee",
-    gradient: "from-pink-500/20 to-red-500/20",
-  },
-  {
-    name: "Brand Uniform",
-    category: "Brands",
-    inkColors: "1-color",
-    garment: "Long Sleeve",
-    gradient: "from-indigo-500/20 to-blue-500/20",
-  },
-  {
-    name: "Hardcore Show",
-    category: "Bands",
-    inkColors: "Black + White",
-    garment: "Tee",
-    gradient: "from-gray-500/20 to-slate-500/20",
-  },
-  {
-    name: "Pop-Up Drop",
-    category: "Events",
-    inkColors: "2-color",
-    garment: "Hoodie",
-    gradient: "from-yellow-500/20 to-orange-500/20",
-  },
-  {
-    name: "Coffee Co.",
-    category: "Brands",
-    inkColors: "2-color",
-    garment: "Tee",
-    gradient: "from-amber-500/20 to-brown-500/20",
-  },
-  {
-    name: "Summer Tour",
-    category: "Bands",
-    inkColors: "3-color",
-    garment: "Tank",
-    gradient: "from-cyan-500/20 to-blue-500/20",
-  },
-];
-
-const categories = ["All", "Bands", "Brands", "Events", "Drops"];
+import {
+  THREE_FEATURED_CATEGORIES,
+  THREE_FEATURED_PROJECTS,
+} from "@/lib/data/three";
 
 export function Featured() {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const filteredProjects =
     activeFilter === "All"
-      ? projects
-      : projects.filter((p) => p.category === activeFilter);
+      ? THREE_FEATURED_PROJECTS
+      : THREE_FEATURED_PROJECTS.filter((p) => p.category === activeFilter);
 
   return (
     <section
@@ -95,7 +31,7 @@ export function Featured() {
         </div>
 
         <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
-          {categories.map((category) => (
+          {THREE_FEATURED_CATEGORIES.map((category) => (
             <button
               key={category}
               onClick={() => setActiveFilter(category)}

@@ -4,39 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const faqs = [
-  {
-    question: "What's your minimum order?",
-    answer:
-      "Minimums depend on the complexity of your print and garment type. Most runs start at 12-24 pieces. Rush orders or specialty prints may have different minimums. Send us your project details for an exact quote.",
-  },
-  {
-    question: "What's the turnaround time?",
-    answer:
-      "Standard turnaround is 7-10 business days from proof approval. Rush options are available when our schedule allows. Tour or event deadlines? Let us know ASAP and we'll do everything we can to make it work.",
-  },
-  {
-    question: "Can you help clean up artwork?",
-    answer:
-      "Yes. We can convert low-res images to print-ready files, rebuild logos, and make adjustments. Complex design work may have an art fee. We'll let you know upfront if any cleanup is needed.",
-  },
-  {
-    question: "What garments do you recommend?",
-    answer:
-      "We work with quality blanks from Gildan, Comfort Colors, Bella+Canvas, and more. We'll recommend garments based on your budget, style, and print. Need something specific? We can source it.",
-  },
-  {
-    question: "Local pickup vs shipping?",
-    answer:
-      "Local pickup is free in Oklahoma City. We ship nationwide via USPS or UPS. Shipping costs depend on order size and destination. We'll include shipping estimates in your quote.",
-  },
-  {
-    question: "Do you offer design services?",
-    answer:
-      "We focus on printing, but we can recommend local designers and artists who specialize in merch graphics. Have an idea but no art? Let us know and we'll point you in the right direction.",
-  },
-];
+import { THREE_FAQS } from "@/lib/data/three";
 
 export function FAQ() {
   return (
@@ -55,7 +23,7 @@ export function FAQ() {
 
         <div className="rounded-lg border border-primary-foreground/50 bg-white/5 backdrop-blur-sm">
           <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
+            {THREE_FAQS.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}

@@ -1,25 +1,5 @@
 import { Quote } from "lucide-react";
-
-const testimonials = [
-  {
-    quote:
-      "Best print quality we've had. Backroom handled our entire tour run with zero issues. Communication was fast and the prints held up through 30+ shows.",
-    author: "Jake Morrison",
-    role: "Vocalist, Dead End Youth",
-  },
-  {
-    quote:
-      "Needed 200 hoodies for a pop-up in 10 days. They made it happen. Quality was perfect and the team kept us updated the whole time.",
-    author: "Sarah Chen",
-    role: "Creative Director, OKC Collective",
-  },
-  {
-    quote:
-      "We run all our label merch through Backroom. Consistent quality, fast replies, and they actually understand what bands need.",
-    author: "Marcus Wright",
-    role: "Owner, Concrete Records",
-  },
-];
+import { THREE_TESTIMONIALS } from "@/lib/data/three";
 
 export function Testimonials() {
   return (
@@ -37,7 +17,7 @@ export function Testimonials() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
+          {THREE_TESTIMONIALS.map((testimonial, index) => (
             <div
               key={index}
               className="group relative rounded-lg border border-primary/15 bg-primary/5 p-8 backdrop-blur-sm transition-all duration-300 hover:bg-primary/30"

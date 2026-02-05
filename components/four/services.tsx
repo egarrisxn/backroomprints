@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { services } from "@/lib/four/data";
+import { services } from "@/lib/data/four";
 
 export function Services() {
   return (

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ONE_NAV_LINKS } from "@/lib/data/one";
 
 export default function Navigation() {
   return (
@@ -19,30 +20,15 @@ export default function Navigation() {
             </div>
           </div>
           <nav className="hidden items-center gap-8 text-sm md:flex">
-            <a
-              href="#services"
-              className="text-foreground transition-colors hover:text-accent"
-            >
-              Services
-            </a>
-            <a
-              href="#work"
-              className="text-foreground transition-colors hover:text-accent"
-            >
-              Our Work
-            </a>
-            <a
-              href="#process"
-              className="text-foreground transition-colors hover:text-accent"
-            >
-              Process
-            </a>
-            <a
-              href="#contact"
-              className="text-foreground transition-colors hover:text-accent"
-            >
-              Contact
-            </a>
+            {ONE_NAV_LINKS.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-foreground transition-colors hover:text-accent"
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
           <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="size-5" />

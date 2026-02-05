@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "../theme-toggle";
-import { NAV_ITEMS } from "@/lib/four/data";
+import { NAV_ITEMS } from "@/lib/data/four";
 
 export function Navigation({ onNav }: { onNav: (id: string) => void }) {
   return (

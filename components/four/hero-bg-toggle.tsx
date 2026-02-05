@@ -1,6 +1,6 @@
 "use client";
 
-import type { HeroBgVariant } from "@/lib/four/types";
+import type { HeroBgVariant } from "@/lib/types/four";
 
 export function HeroBgToggle({
   value,

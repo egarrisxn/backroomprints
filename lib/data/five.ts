@@ -5,7 +5,9 @@ import type {
   ProcessSteps,
   ProductTypes,
   PrintLocations,
-} from "./types";
+  WorkProject,
+  PackageTier,
+} from "@/lib/types/five";
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
@@ -106,4 +108,52 @@ export const QUOTE_CHECKLIST = [
   "Quantity needed",
   "Number of colors",
   "Project deadline",
+];
+
+export const WORK_PROJECTS: WorkProject[] = [
+  { name: "Band Tour Tees", tags: ["2-color", "T-shirt", "Front+Back"] },
+  { name: "Local Brewery", tags: ["1-color", "Hoodie", "Chest"] },
+  { name: "Festival 2024", tags: ["3-color", "T-shirt", "All-over"] },
+  { name: "Coffee Shop Crew", tags: ["1-color", "T-shirt", "Front"] },
+  { name: "Punk Show Series", tags: ["2-color", "Hoodie", "Back"] },
+  { name: "Skateboard Co.", tags: ["2-color", "T-shirt", "Front+Back"] },
+];
+
+export const PACKAGE_TIERS: PackageTier[] = [
+  {
+    title: "Starter Run",
+    items: [
+      "25-50 pieces minimum",
+      "1-2 color prints",
+      "Digital proof included",
+      "Standard turnaround",
+      "Local pickup or shipping",
+    ],
+    variant: "outline",
+  },
+  {
+    title: "Drop Ready",
+    items: [
+      "50-150 pieces",
+      "Up to 4 colors",
+      "Multiple locations",
+      "Priority turnaround",
+      "Artwork assistance",
+      "Free shipping options",
+    ],
+    featured: true,
+    variant: "default",
+  },
+  {
+    title: "Tour Pack",
+    items: [
+      "150+ pieces",
+      "Unlimited colors",
+      "Multiple garment types",
+      "Rush available",
+      "Full design support",
+      "Bulk pricing",
+    ],
+    variant: "outline",
+  },
 ];

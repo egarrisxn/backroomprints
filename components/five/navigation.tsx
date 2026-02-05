@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { NAV_ITEMS } from "@/lib/five/data";
+import { NAV_ITEMS } from "@/lib/data/five";
 
 export function Navigation({ onNav }: { onNav: (id: string) => void }) {
   return (

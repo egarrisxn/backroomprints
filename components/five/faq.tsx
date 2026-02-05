@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQ_ITEMS } from "@/lib/five/data";
+import { FAQ_ITEMS } from "@/lib/data/five";
 
 export function Faq() {
   return (

@@ -12,8 +12,8 @@ import { ProcessTimeline } from "./process";
 import { QuoteForm } from "./quote-form";
 import { Faq } from "./faq";
 import { SiteFooter } from "./footer";
-import type { HeroBgVariant } from "@/lib/four/types";
-import { gallery as galleryData } from "@/lib/four/data";
+import type { HeroBgVariant } from "@/lib/types/four";
+import { gallery as galleryData } from "@/lib/data/four";
 
 export function Container() {
   const [heroBgVariant, setHeroBgVariant] = useState<HeroBgVariant>("wire");
