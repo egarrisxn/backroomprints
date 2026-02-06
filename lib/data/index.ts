@@ -55,6 +55,13 @@ export const prototypes = [
     description: "TBD",
     badge: "TBD",
   },
+  {
+    href: "/seven",
+    title: "Prototype 7",
+    subtitle: "TBD",
+    description: "TBD",
+    badge: "TBD",
+  },
 ];
 
 export const socialData = [
