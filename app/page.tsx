@@ -20,8 +20,9 @@ export default function HomePage() {
             <span className="font-mono">/three</span>,{" "}
             <span className="font-mono">/four</span>,{" "}
             <span className="font-mono">/five</span>,{" "}
-            <span className="font-mono">/six</span>, <span>and</span>{" "}
-            <span className="font-mono">/seven</span>,{" "}
+            <span className="font-mono">/six</span>,{" "}
+            <span className="font-mono">/seven</span>, and{" "}
+            <span className="font-mono">/eight</span>.{" "}
           </p>
         </header>
 
